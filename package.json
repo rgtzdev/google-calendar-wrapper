@@ -1,0 +1,51 @@
+{
+	"name": "googl-calendar-wrapper",
+	"version": "1.0.1",
+	"description": "A Google Calendar Wrapper",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron .",
+		"build:mac": "electron-builder --mac --publish never"
+	},
+	"repository": "https://github.com/gunt2raro/google-cal-wrapper",
+	"keywords": [
+		"Electron",
+		"quick",
+		"start",
+		"tutorial",
+		"demo"
+	],
+	"build": {
+		"appId": "gmailwrapper",
+		"productName": "Google Calendar",
+		"nsis": {
+			"runAfterFinish": true
+		},
+		"dmg": {
+			"icon": "build/icon.ico",
+			"contents": [
+				{
+					"x": 110,
+					"y": 150
+				},
+				{
+					"x": 240,
+					"y": 150,
+					"type": "link",
+					"path": "/Applications"
+				}
+			]
+		},
+		"win": {
+			"target": "NSIS",
+			"icon": "build/icon.ico",
+			"publisherName": "Feather Technologies, LLC"
+		}
+	},
+	"author": "GitHub",
+	"license": "CC0-1.0",
+	"devDependencies": {
+		"electron": "^12.0.8",
+		"electron-builder": "^22.10.5"
+	}
+}
