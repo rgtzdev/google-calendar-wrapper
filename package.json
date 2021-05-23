@@ -7,7 +7,7 @@
 		"start": "electron .",
 		"build:mac": "electron-builder --mac --publish never"
 	},
-	"repository": "https://github.com/gunt2raro/google-cal-wrapper",
+	"repository": "https://github.com/gunt2raro/google-calendar-wrapper",
 	"keywords": [
 		"Electron",
 		"quick",
