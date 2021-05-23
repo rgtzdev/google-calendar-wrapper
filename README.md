@@ -1,6 +1,7 @@
 # Google Calendar Wrapper
 
-This is just a simple electron wrapper, nothing special :P
+This is just a simple electron wrapper, nothing special :P.
+Cleaner than having it in the browser lmL.
 
 ## Install dependencies
 
